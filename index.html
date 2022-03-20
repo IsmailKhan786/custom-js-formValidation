@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form Validatio Using js</title>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <h1>Form Validation Using Js</h1>
+    <form novalidate>
+
+       <div>
+           <label for = "name">Name</label>
+           <input type = "text" id = "txtName">
+           <div class = "error"></div>
+       </div>
+        
+          <br>
+
+       <div>
+           <label for = "mobile">Mobile</label>
+           <input type = "text" id = "txtMobile" required pattern = "^([9]{1})([234789]{1})([0-9]{8})$">
+           <div class = "error"></div>
+        </div>
+        <br>
+       <div>
+           <label for = "email">Email</label>
+           <input type = "email" id = "txtEmail">
+           <div class = "error"></div>
+       </div>
+        <br>
+       <button type = "submit" id = "btnSubmit">Submit</button>
+ 
+       <button type = "reset" id = "btnReset">Reset</button>
+    </form>
+
+    <script src = "index.js"></script>
+</body>
+</html>
